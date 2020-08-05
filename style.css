@@ -1,0 +1,58 @@
+body {
+	background-color: #E6CDAE;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 15% 35% 35% 15%;
+	grid-template-rows: 25% 50% 25%;
+	gap: 1px 1px;
+	grid-template-areas:
+		". title title ."
+		". display display ."
+		"left-footer left-footer right-footer right-footer";
+
+	font-family: "Special Elite", cursive;
+}
+
+.title {
+	grid-area: title;
+	text-align: center;
+	font-family: "Special Elite", cursive;
+	font-size: 24px;
+}
+
+#fizzbuzz-title {
+	color: #F58E00;
+	font-size: 60px;
+	padding-bottom: 30px;
+}
+
+.display {
+	grid-area: display;
+	text-align: center;
+	font-size: 150px;
+	color: white;
+}
+
+.left-footer {
+	grid-area: left-footer;
+	margin: 0 auto;
+	vertical-align: center;
+	padding-top: 70px;
+}
+
+.button{
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	font-family: "Special Elite", cursive;
+	font-size: 26px;
+}
+
+.right-footer {
+	grid-area: right-footer;
+	text-align: center;
+	padding: 10px;
+	padding-top: 150px;
+}
